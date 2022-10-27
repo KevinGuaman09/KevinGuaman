@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KevinGuaman.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout VerticalOptions="Center">
+                <Label x:Name="lblUser"
+                   Text=""
+                
+                HorizontalOptions="CenterAndExpand" />
+
+
+                <Label Text="Registro estudiante Curso Online "
+                   HorizontalOptions="Start"></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition>
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre estudiante:" Grid.Row="0" Grid.Column="0"></Label>
+                    <Entry x:Name="txtEstudiante" Placeholder="Ingrese el nombre"
+                           Grid.Row="0" Grid.Column="1"></Entry>
+                
+                <Label Text="Monto Inicial:" Grid.Row="1" Grid.Column="0"></Label>
+                    <Entry x:Name="txtMonto" Placeholder="Ingrese el monto"
+                           Grid.Row="1" Grid.Column="1" 
+                           Keyboard="Numeric"></Entry>
+                
+                    <Label Text="Pago Mensual:" Grid.Row="2" Grid.Column="0"></Label>
+                    <Entry x:Name="txtPago" Placeholder="Veifique el pago"
+                           Grid.Row="2" Grid.Column="1"
+                           Keyboard="Numeric"></Entry>
+                </Grid>
+                <Button Text="Calcular"
+                        Clicked="btnCalMensual_Clicked">
+                    
+                    
+                </Button>
+                <Button Text="Guardar"
+                        Clicked="btnResumen_Clicked">
+                    
+                </Button>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
